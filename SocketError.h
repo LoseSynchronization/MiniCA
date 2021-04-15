@@ -1,0 +1,1 @@
+void SockMsgBox(DWORD error);
