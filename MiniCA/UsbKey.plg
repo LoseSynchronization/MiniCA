@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UsbKey - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/UsbKey.res" /d "NDEBUG" "E:\Visual Studio Projects\MiniCA\MiniCA\UsbKey.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP228.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\openssl" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/UsbKey.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Visual Studio Projects\MiniCA\MiniCA\ColorListBox.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\SslClientSocket.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\SslServerSocket.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\TextProgressCtrl.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbCaPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbCertPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbEvpPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbInfoPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbKey.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbKeySheet.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbProcPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbPwdPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbRaServer.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbSoPage.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbSslClient.cpp"
+"E:\Visual Studio Projects\MiniCA\MiniCA\UsbSslServer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP228.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP229.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\openssl" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/UsbKey.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Visual Studio Projects\MiniCA\MiniCA\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP229.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/MiniCA.pdb" /machine:I386 /out:"Release/MiniCA.exe" 
+".\Release\ColorListBox.obj"
+".\Release\SslClientSocket.obj"
+".\Release\SslServerSocket.obj"
+".\Release\StdAfx.obj"
+".\Release\TextProgressCtrl.obj"
+".\Release\UsbCaPage.obj"
+".\Release\UsbCertPage.obj"
+".\Release\UsbEvpPage.obj"
+".\Release\UsbInfoPage.obj"
+".\Release\UsbKey.obj"
+".\Release\UsbKeySheet.obj"
+".\Release\UsbProcPage.obj"
+".\Release\UsbPwdPage.obj"
+".\Release\UsbRaServer.obj"
+".\Release\UsbSoPage.obj"
+".\Release\UsbSslClient.obj"
+".\Release\UsbSslServer.obj"
+".\Release\UsbKey.res"
+"..\UsbKeyApi.lib"
+"..\ep1kdl20.lib"
+"..\Evp.lib"
+"..\SocketErrDll.lib"
+"..\CA.lib"
+"..\ssleay32.lib"
+"..\libeay32.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ColorListBox.cpp
+SslClientSocket.cpp
+SslServerSocket.cpp
+TextProgressCtrl.cpp
+UsbCaPage.cpp
+UsbCertPage.cpp
+UsbEvpPage.cpp
+UsbInfoPage.cpp
+UsbKey.cpp
+UsbKeySheet.cpp
+UsbProcPage.cpp
+UsbPwdPage.cpp
+UsbRaServer.cpp
+UsbSoPage.cpp
+UsbSslClient.cpp
+UsbSslServer.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MiniCA.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

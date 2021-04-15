@@ -1,0 +1,845 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UsbKey.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\UsbKey.ico"
+IDI_ICONKEY             ICON    DISCARDABLE     "res\\K.ICO"
+IDI_ICONFILE            ICON    DISCARDABLE     "res\\File.ICO"
+IDI_ICON_ROOT           ICON    DISCARDABLE     "res\\root.ICO"
+IDI_ICON_FREEDEVICE     ICON    DISCARDABLE     "res\\device.ICO"
+IDI_ICON_FILE           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_DIRO           ICON    DISCARDABLE     "res\\d_open.ico"
+IDI_ICON_DIRC           ICON    DISCARDABLE     "res\\d_close.ICO"
+IDI_ICON_KEY            ICON    DISCARDABLE     "res\\Key.ICO"
+IDI_ICON_ID             ICON    DISCARDABLE     "res\\ID.ico"
+IDI_ICON_CERT           ICON    DISCARDABLE     "res\\cert.ico"
+IDI_ICON_DISK           ICON    DISCARDABLE     "res\\DISK.ICO"
+IDI_ICON_PWD            ICON    DISCARDABLE     "res\\PWD.ICO"
+IDI_ICONUNLOCK          ICON    DISCARDABLE     "res\\UNLOCK.ico"
+IDI_ICON_LOCK           ICON    DISCARDABLE     "res\\LOCK.ico"
+IDI_ICON_SO             ICON    DISCARDABLE     "res\\SO.ICO"
+IDI_ICON_FORMAT         ICON    DISCARDABLE     "res\\FORMAT.ICO"
+IDI_ICON_VERIFY         ICON    DISCARDABLE     "res\\VERIFY.ico"
+IDI_ICON_DEV            ICON    DISCARDABLE     "res\\DEVTOOL.ICO"
+IDI_ICON_ERROR          ICON    DISCARDABLE     "res\\error.ico"
+IDI_ICON_OK             ICON    DISCARDABLE     "res\\Ok.ico"
+IDI_ICON_WARING         ICON    DISCARDABLE     "res\\Waring.ico"
+IDI_ICON_EXTERN         ICON    DISCARDABLE     "res\\Oth017.ICO"
+IDI_ICON_CA             ICON    DISCARDABLE     "res\\ca.ICO"
+IDI_ICON_SERVER         ICON    DISCARDABLE     "res\\server.ICO"
+IDI_ICON_CLIENT         ICON    DISCARDABLE     "res\\client.ico"
+IDI_ICON_EVP            ICON    DISCARDABLE     "res\\EVP.ico"
+IDI_ICON_RA             ICON    DISCARDABLE     "res\\Ra.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_KEYINFO DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE DS_3DLOOK | WS_CHILD | WS_CAPTION
+CAPTION "USB--磁盘操作"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,7,7,118,154
+    LTEXT           "剩余",IDC_STATIC,161,102,17,8
+    ICON            IDI_ICON_FREEDEVICE,IDC_STATIC,137,92,20,20
+    EDITTEXT        IDC_EDIT,181,101,21,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "字节",IDC_STATIC,202,102,17,8
+    GROUPBOX        "信息：",IDC_STATIC,130,7,113,154
+    LTEXT           "ID号：",IDC_STATIC,137,17,25,8
+    LTEXT           "类型：",IDC_STATIC,137,30,25,8
+    LTEXT           "占用空间：",IDC_STATIC,137,44,41,8
+    LTEXT           "读取权限：",IDC_STATIC,137,57,41,8
+    LTEXT           "写入权限：",IDC_STATIC,137,70,41,8
+    EDITTEXT        IDC_EDIT_ID,166,16,40,14,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_TYPE,166,29,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_SPACE,181,43,22,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_READ,181,56,47,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_WRITE,181,69,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "加密权限：",IDC_STATIC,137,83,41,8
+    EDITTEXT        IDC_EDIT_CRYPT,181,83,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN | 
+                    WS_DISABLED | WS_BORDER,131,117,111,1
+    EDITTEXT        IDC_EDIT_INPUTID,179,123,52,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "执  行",IDC_B_OK,136,141,38,14,BS_FLAT
+    PUSHBUTTON      "取消",IDC_B_CANLE,192,141,38,14,BS_FLAT
+    LTEXT           "字节",IDC_STATIC,206,44,17,8
+    LISTBOX         IDC_LIST_INFO,7,167,236,47,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "ID输入框：",IDC_STATIC,136,125,41,8
+END
+
+IDD_PROPPAGE_PWD DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "USB--密码操作"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "验证用户密码",IDC_STATIC,7,7,124,64,BS_FLAT
+    LTEXT           "用户密码",IDC_STATIC,11,22,33,8
+    EDITTEXT        IDC_EDIT_UPWD2,46,18,47,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "验证",IDC_B_VERUSER,99,18,28,14,BS_FLAT
+    GROUPBOX        "更改用户密码",IDC_STATIC,135,7,108,64,BS_FLAT | 
+                    WS_GROUP
+    LTEXT           "原密码",IDC_STATIC,141,23,25,8
+    LTEXT           "新密码",IDC_STATIC,141,39,25,8
+    EDITTEXT        IDC_EDIT_UPWD3,172,21,65,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_GROUP | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UPWD4,172,35,65,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON      "修改密码",IDC_B_MODPWD,186,52,50,15,BS_FLAT
+    LISTBOX         IDC_LIST,7,116,124,98,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "最大尝试次数：",IDC_STATIC,37,37,57,8
+    LTEXT           "剩余尝试次数：",IDC_STATIC,38,54,57,8
+    EDITTEXT        IDC_EDIT_TESTMAX,96,35,24,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TESTCURRENT,96,53,24,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    ICON            IDI_ICONUNLOCK,IDC_STATIC_STATE,12,38,20,20
+    GROUPBOX        "验证管理员密码",IDC_STATIC,7,75,236,36,BS_FLAT
+    LTEXT           "输入So密码",IDC_STATIC,63,92,41,8
+    EDITTEXT        IDC_EDIT_SPWD,115,89,57,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON      "验  证",IDC_B_VERSO,179,89,50,14,BS_FLAT
+    GROUPBOX        "更改管理员密码",IDC_STATIC,135,116,108,98,BS_FLAT | 
+                    WS_GROUP
+    LTEXT           "原密码",IDC_STATIC,141,135,25,8
+    LTEXT           "新密码",IDC_STATIC,141,162,25,8
+    EDITTEXT        IDC_EDIT_UPWD5,172,133,65,14,ES_AUTOHSCROLL | WS_GROUP | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UPWD6,172,160,65,14,ES_AUTOHSCROLL | WS_GROUP | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "修改密码",IDC_B_MODPWD2,185,183,50,15,BS_FLAT
+    ICON            IDI_ICON_VERIFY,IDC_STATIC,25,86,20,20
+END
+
+IDD_PROPPAGE_PROC DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "USB--证书操作"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "获取随即数",IDC_STATIC,7,7,236,46
+    EDITTEXT        IDC_EDIT_RAND,14,36,223,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "获 取",IDC_B_GETRAND,122,17,34,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_LEN,66,17,44,14,ES_AUTOHSCROLL
+    LTEXT           "随机数长度：",IDC_STATIC,14,20,49,8
+    LISTBOX         IDC_LIST_PROC,7,174,236,40,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    ICON            IDI_ICON_DEV,IDC_STATIC,215,13,20,20
+    GROUPBOX        "数字证书操作",IDC_STATIC,7,55,236,113
+    CONTROL         "Progress2",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    12,151,224,14
+    LTEXT           "操作进度指示",IDC_STATIC,14,138,49,8
+    EDITTEXT        IDC_EDIT_INFILE,14,65,176,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTFILE,14,82,176,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "输入文件",IDC_BSOUT,196,65,41,14,BS_FLAT
+    PUSHBUTTON      "输出文件",IDC_BSIN,196,82,41,14,BS_FLAT
+    PUSHBUTTON      "数字签名",IDC_BSIGN,100,104,50,14,BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "验证签名",IDC_B_VERIFY,100,122,50,14,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "数字信封",IDC_B_SEAL,187,104,50,14,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "拆封信封",IDC_B_OPEN,187,122,50,14,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "加密文件",IDC_B_ENC,14,104,50,14,BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "解密文件",IDC_B_DEC,14,121,50,14,BS_FLAT | WS_DISABLED
+END
+
+IDD_PROPPAGE_SO DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "USB--管理员操作"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "系统操作 ",IDC_STATIC,131,146,112,68,BS_FLAT
+    PUSHBUTTON      "解锁",IDC_B_UNLOCK,201,193,32,14,BS_FLAT
+    PUSHBUTTON      "初始化",IDC_BInitKey,199,36,37,14,BS_FLAT
+    GROUPBOX        "初始化钥匙",IDC_STATIC,131,7,112,49,BS_FLAT
+    LTEXT           "密码（新钥匙不必添）",IDC_STATIC,138,21,81,8
+    EDITTEXT        IDC_EDIT_UPWD,140,36,52,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "路径",IDC_STATIC,137,74,17,8
+    EDITTEXT        IDC_EDIT_PATH,157,71,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择",IDC_B_SELPATH,212,71,27,14,BS_FLAT
+    GROUPBOX        "写入证书",IDC_STATIC,131,58,112,83,BS_FLAT
+    PUSHBUTTON      "写入",IDC_B_WRITE,211,116,27,14,BS_FLAT
+    LTEXT           "口令",IDC_STATIC,137,117,17,8
+    EDITTEXT        IDC_EDIT_PRIPWD,157,116,50,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "权限设置",IDC_STATIC,7,7,116,93
+    GROUPBOX        "创建",IDC_STATIC,12,17,50,62,BS_FLAT
+    GROUPBOX        "删除",IDC_STATIC,68,17,50,62,BS_FLAT
+    CONTROL         "任何人",IDC_RADIO_ANYONE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,18,28,40,10
+    CONTROL         "用户",IDC_RADIO_PIN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,18,40,32,10
+    CONTROL         "管理员",IDC_RADIO_SOPIN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,18,52,40,10
+    CONTROL         "禁止",IDC_RADIO_NONE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,18,64,32,10
+    CONTROL         "任何人",IDC_RADIO_ANYONE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,74,28,40,10
+    CONTROL         "用户",IDC_RADIO_PIN2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,74,40,32,10
+    CONTROL         "管理员",IDC_RADIO_SOPIN2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,74,52,40,10
+    CONTROL         "禁止",IDC_RADIO_NONE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,74,64,32,10
+    LISTBOX         IDC_LIST_SO,7,103,116,111,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_B_SET,87,84,31,14,BS_FLAT
+    ICON            IDI_ICONUNLOCK,IDC_STATIC_SOLOCK,169,187,20,20
+    PUSHBUTTON      "格式化",IDC_B_FORMAT,168,163,32,14,BS_FLAT
+    ICON            IDI_ICON_FORMAT,IDC_STATIC,140,160,20,20
+    LTEXT           "P12",IDC_STATIC,138,96,13,8
+    EDITTEXT        IDC_EDIT_PATH2,157,94,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择",IDC_B_SELPATH2,212,93,27,14,BS_FLAT
+END
+
+IDD_PROPPAGE_EXT DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "CA扩展操作"
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LIST_CERT,7,169,236,45,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "证书编码转换",IDC_STATIC,7,102,236,62
+    PUSHBUTTON      "转换为DER",IDC_BPTOD,11,145,45,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_PASSWORD,114,66,56,14,ES_AUTOHSCROLL
+    LTEXT           "加密口令：",IDC_STATIC,70,82,41,8
+    PUSHBUTTON      "选择私钥",IDC_B_KEY,200,50,41,14,BS_FLAT
+    PUSHBUTTON      "选择P12",IDC_B_PUB,200,33,41,14,BS_FLAT
+    GROUPBOX        "PKCS#12操作",IDC_STATIC,7,7,238,91
+    EDITTEXT        IDC_EDIT_PATH,11,17,184,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "输出路径",IDC_B_PATH,200,17,41,14,BS_FLAT
+    LTEXT           "解密口令：",IDC_STATIC,70,68,41,8
+    EDITTEXT        IDC_EDIT_PASSWORD2,114,80,56,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "执行操作",IDC_B_OK,200,76,41,14,BS_FLAT
+    CONTROL         "提取证书",IDC_R_PARSE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,15,47,48,10
+    CONTROL         "合并证书",IDC_R_CREATE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,15,63,48,10
+    CONTROL         "修改密码",IDC_R_CHANGEP,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,15,81,48,10
+    GROUPBOX        "操作类型",IDC_STATIC,11,33,53,62
+    EDITTEXT        IDC_EDIT_P12,68,33,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY,68,50,127,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "转换为PEM",IDC_BDTOP,103,145,45,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_INFILE,11,113,184,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTFILE,11,128,184,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "输入文件",IDC_BSOUT,200,113,41,14,BS_FLAT
+    PUSHBUTTON      "输出文件",IDC_BSIN,200,128,41,14,BS_FLAT
+    PUSHBUTTON      "检验密钥对",IDC_B_CHECK,196,145,45,14,BS_FLAT
+END
+
+IDD_PROPPAGE_CA DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "CA中心操作"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_PATH,11,17,185,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "输出路径",IDC_B_PATH,199,17,41,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_C,41,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ST,121,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L,201,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_O,41,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OU,121,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CN,201,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_E,41,63,200,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_L,41,78,40,43,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DAY,121,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SN,201,78,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "制根证书",IDC_B_MKROOT,10,100,41,14,BS_FLAT
+    PUSHBUTTON      "证书请求",IDC_B_MKREQ,10,117,41,14,BS_FLAT
+    EDITTEXT        IDC_EDIT4,60,113,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "REQ文件",IDC_B_PATH4,196,113,41,14,BS_FLAT
+    PUSHBUTTON      "REQ制证书",IDC_B_MKCERT,196,132,41,14,BS_FLAT
+    PUSHBUTTON      "制作CRL",IDC_B_CRL,10,135,41,14,BS_FLAT
+    CONTROL         "DER格式",IDC_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,61,134,44,10
+    LISTBOX         IDC_LIST_CA,7,159,238,55,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    LTEXT           "国家C：",IDC_STATIC,12,36,29,8
+    LTEXT           "省份S：",IDC_STATIC,88,36,29,8
+    LTEXT           "城市L：",IDC_STATIC,167,36,29,8
+    LTEXT           "组织O：",IDC_STATIC,12,50,29,8
+    LTEXT           "单元OU：",IDC_STATIC,88,50,33,8
+    LTEXT           "个体CN：",IDC_STATIC,167,50,33,8
+    GROUPBOX        "中心操作",IDC_STATIC,7,7,238,146
+    LTEXT           "长 度：",IDC_STATIC,12,80,29,8
+    LTEXT           "有效期：",IDC_STATIC,88,81,33,8
+    LTEXT           "序列号：",IDC_STATIC,167,81,33,8
+    LTEXT           "EMali：",IDC_STATIC,12,65,29,8
+    GROUPBOX        "制作证书",IDC_STATIC,55,100,186,49
+    CONTROL         "PKCS12",IDC_CHECK_P12,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,106,134,40,10
+    PUSHBUTTON      "制作证书",IDC_B_MKCERT2,148,132,41,14,BS_FLAT
+END
+
+IDD_PROPPAGE_SSLCLIENT DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SSL 客户端"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "服务器地址：",IDC_STATIC,11,13,49,8
+    LTEXT           "服务器端口：",IDC_STATIC,127,14,49,8
+    EDITTEXT        IDC_EDIT_PORT,177,11,22,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "连接",IDC_B_CONNECT,205,11,35,14,BS_FLAT
+    LISTBOX         IDC_LIST_CLIENT,7,53,236,161,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "断开",IDC_B_DISCON,205,32,35,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_SEND,7,33,158,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_B_SEND,167,32,35,14,BS_FLAT | WS_DISABLED
+    COMBOBOX        IDC_COM_IP,61,11,56,82,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PROPPAGE_SSLSERVER DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SSL 服务器"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "开始服务",IDC_LISTEN,80,26,50,14,BS_FLAT
+    LISTBOX         IDC_LIST_SERVER,7,48,140,166,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CONTROL         IDI_ICON_DIRC,IDC_STATIC_ON,"Static",SS_BITMAP,57,27,10,
+                    10
+    CONTROL         IDI_ICON_DIRO,IDC_STATIC_OFF,"Static",SS_BITMAP,57,27,10,
+                    10
+    CONTROL         "IPAddress1",IDC_IPADDRESS_IP,"SysIPAddress32",0x0,46,7,
+                    94,14
+    LTEXT           "服务器IP:",IDC_STATIC,7,10,37,8
+    LTEXT           "服务器状态：",IDC_STATIC,7,28,49,8
+    LTEXT           "服务器端口:",IDC_STATIC,149,10,45,8
+    EDITTEXT        IDC_EDIT_PORT,200,7,26,14,ES_AUTOHSCROLL
+    CONTROL         "客户证书",IDC_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,146,28,48,10
+    LISTBOX         IDC_LIST_SERVER2,154,48,89,144,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "获取连接状态",IDC_B_GETC,154,200,89,14,BS_FLAT
+END
+
+IDD_PROPPAGE_EVP DIALOGEX 0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "EVP算法操作"
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LIST_EVP,7,167,238,47,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "对称算法、数字信封",IDC_STATIC,5,41,238,28
+    GROUPBOX        "摘要、签名算法",IDC_STATIC,6,74,238,45
+    GROUPBOX        "RSA算法",IDC_STATIC,6,126,96,33
+    EDITTEXT        IDC_EDIT_INFILE,7,7,190,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OUTFILE,7,23,189,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "输入文件",IDC_BSOUT,202,7,41,14,BS_FLAT
+    PUSHBUTTON      "输出文件",IDC_BSIN,202,23,41,14,BS_FLAT
+    COMBOBOX        IDC_COMBO_CRYPT,7,51,55,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "对称加密",IDC_BENC,65,51,38,14,BS_FLAT
+    PUSHBUTTON      "对称解密",IDC_BDEC,111,51,38,14,BS_FLAT
+    PUSHBUTTON      "封装信封",IDC_BSEAL,157,51,38,14,BS_FLAT
+    PUSHBUTTON      "拆封信封",IDC_BOPENSEAL,203,51,38,14,BS_FLAT
+    COMBOBOX        IDC_COMBO_DIGEST,7,101,55,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "消息摘要",IDC_BDIGEST,65,101,38,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_DIGEST,8,84,232,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "数字签名",IDC_BSIGN,134,101,38,14,BS_FLAT
+    PUSHBUTTON      "验证签名",IDC_BVSIGN,203,101,38,14,BS_FLAT
+    PUSHBUTTON      "公钥加密",IDC_BRSACERT,13,140,38,14,BS_FLAT
+    PUSHBUTTON      "私钥解密",IDC_BRSAKEY,59,140,38,14,BS_FLAT
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    107,140,134,14
+END
+
+IDD_PROPPAGE_RASERVER DIALOG DISCARDABLE  0, 0, 250, 221
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "RA 服务器"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "开始服务",IDC_LISTEN,80,26,50,14,BS_FLAT | WS_DISABLED
+    LISTBOX         IDC_LIST_SERVER,7,48,140,166,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CONTROL         IDI_ICON_DIRC,IDC_STATIC_ON,"Static",SS_BITMAP,57,27,10,
+                    10
+    CONTROL         IDI_ICON_DIRO,IDC_STATIC_OFF,"Static",SS_BITMAP,57,27,10,
+                    10
+    CONTROL         "IPAddress1",IDC_IPADDRESS_IP,"SysIPAddress32",0x0,46,7,
+                    94,14
+    LTEXT           "服务器IP:",IDC_STATIC,7,10,37,8
+    LTEXT           "服务器状态：",IDC_STATIC,7,28,49,8
+    LTEXT           "服务器端口:",IDC_STATIC,149,10,45,8
+    EDITTEXT        IDC_EDIT_PORT,200,7,26,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_SERVER2,154,48,89,144,NOT LBS_NOTIFY | 
+                    LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "获取连接状态",IDC_B_GETC,154,200,89,14,BS_FLAT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MiniCA Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MiniCA\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MiniCA.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MiniCA应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_KEYINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_PWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_PROC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_SO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_EXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_CA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_SSLCLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_SSLSERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_EVP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PROPPAGE_RASERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_INFO MENU DISCARDABLE 
+BEGIN
+    POPUP "pop"
+    BEGIN
+        MENUITEM "创建目录",                    ID_MENU_CREATEDIR
+        MENUITEM "删除目录",                    ID_MENU_DELDIR
+        MENUITEM SEPARATOR
+        MENUITEM "传入数据文件",                ID_MENU_PUTFILE
+        MENUITEM "创建密钥文件",                ID_MENU_KEYFILE
+        MENUITEM "传出文件",                    ID_MENU_POPFILE
+        MENUITEM "删除文件",                    ID_MENU_DELFILE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_CA DLGINIT
+BEGIN
+    IDC_COMBO_L, 0x403, 4, 0
+0x3135, 0x0032, 
+    IDC_COMBO_L, 0x403, 5, 0
+0x3031, 0x3432, "\000" 
+    0
+END
+
+IDD_PROPPAGE_SSLCLIENT DLGINIT
+BEGIN
+    IDC_COM_IP, 0x403, 10, 0
+0x6f6c, 0x6163, 0x686c, 0x736f, 0x0074, 
+    IDC_COM_IP, 0x403, 17, 0
+0x7777, 0x2e77, 0x7469, 0x7572, 0x2e73, 0x6f63, 0x2e6d, 0x6e63, "\000" 
+    IDC_COM_IP, 0x403, 17, 0
+0x6f6c, 0x6967, 0x2e6e, 0x7973, 0x6162, 0x6573, 0x632e, 0x6d6f, "\000" 
+    IDC_COM_IP, 0x403, 13, 0
+0x696c, 0x7473, 0x2e73, 0x7375, 0x2e74, 0x6b68, "\000" 
+    IDC_COM_IP, 0x403, 18, 0
+0x7777, 0x2e77, 0x6e6f, 0x696c, 0x656e, 0x696e, 0x2e63, 0x6f63, 0x006d, 
+
+    IDC_COM_IP, 0x403, 12, 0
+0x7777, 0x2e77, 0x7267, 0x2e63, 0x6f63, 0x006d, 
+    IDC_COM_IP, 0x403, 25, 0
+0x7777, 0x2e77, 0x6d6d, 0x616c, 0x2e62, 0x7363, 0x2e65, 0x7a79, 0x2e75, 
+0x6465, 0x2e75, 0x7774, "\000" 
+    IDC_COM_IP, 0x403, 32, 0
+0x6f73, 0x7275, 0x6563, 0x6d2e, 0x7869, 0x616d, 0x7473, 0x7265, 0x612e, 
+0x6f6e, 0x796e, 0x696d, 0x657a, 0x2e72, 0x6f63, 0x006d, 
+    IDC_COM_IP, 0x403, 20, 0
+0x6e69, 0x7571, 0x7269, 0x2e79, 0x636e, 0x6363, 0x632e, 0x6d6f, 0x742e, 
+0x0077, 
+    IDC_COM_IP, 0x403, 18, 0
+0x7777, 0x2e77, 0x7561, 0x6974, 0x7473, 0x6369, 0x2e69, 0x726f, 0x0067, 
+
+    0
+END
+
+IDD_PROPPAGE_EVP DLGINIT
+BEGIN
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3231, 0x2d38, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3231, 0x2d38, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3231, 0x2d38, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3231, 0x2d38, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3931, 0x2d32, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3931, 0x2d32, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3931, 0x2d32, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3931, 0x2d32, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3532, 0x2d36, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3532, 0x2d36, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3532, 0x2d36, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6561, 0x2d73, 0x3532, 0x2d36, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 7, 0
+0x6662, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 7, 0
+0x6662, 0x652d, 0x6263, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 7, 0
+0x6662, 0x632d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 7, 0
+0x6662, 0x6f2d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6564, 0x2d73, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6564, 0x2d73, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6564, 0x2d73, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6564, 0x2d73, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6564, 0x2d73, 0x6465, 0x0065, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6564, 0x2d73, 0x6465, 0x2d65, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6564, 0x2d73, 0x6465, 0x2d65, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 12, 0
+0x6564, 0x2d73, 0x6465, 0x2d65, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6564, 0x2d73, 0x6465, 0x3365, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 13, 0
+0x6564, 0x2d73, 0x6465, 0x3365, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 13, 0
+0x6564, 0x2d73, 0x6465, 0x3365, 0x632d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 13, 0
+0x6564, 0x2d73, 0x6465, 0x3365, 0x6f2d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6564, 0x7873, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6469, 0x6165, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6469, 0x6165, 0x652d, 0x6263, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6469, 0x6165, 0x632d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 9, 0
+0x6469, 0x6165, 0x6f2d, 0x6266, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d32, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d32, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d32, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d32, 0x666f, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 11, 0
+0x6372, 0x2d32, 0x3034, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 11, 0
+0x6372, 0x2d32, 0x3436, 0x632d, 0x6362, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 4, 0
+0x6372, 0x0034, 
+    IDC_COMBO_CRYPT, 0x403, 7, 0
+0x6372, 0x2d34, 0x3034, "\000" 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d35, 0x6263, 0x0063, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d35, 0x6365, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d35, 0x6663, 0x0062, 
+    IDC_COMBO_CRYPT, 0x403, 8, 0
+0x6372, 0x2d35, 0x666f, 0x0062, 
+    IDC_COMBO_DIGEST, 0x403, 4, 0
+0x646d, 0x0032, 
+    IDC_COMBO_DIGEST, 0x403, 4, 0
+0x646d, 0x0034, 
+    IDC_COMBO_DIGEST, 0x403, 4, 0
+0x646d, 0x0035, 
+    IDC_COMBO_DIGEST, 0x403, 4, 0
+0x6873, 0x0061, 
+    IDC_COMBO_DIGEST, 0x403, 5, 0
+0x6873, 0x3161, "\000" 
+    IDC_COMBO_DIGEST, 0x403, 5, 0
+0x646d, 0x3263, "\000" 
+    IDC_COMBO_DIGEST, 0x403, 10, 0
+0x6972, 0x6570, 0x646d, 0x3631, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CERT
+//
+
+IDR_ROOT_CERT           CERT    DISCARDABLE     "res\\RootCert.pem"
+IDR_ROOT_KEY            CERT    DISCARDABLE     "res\\RootKey.pem"
+IDR_SERVER_CERT         CERT    DISCARDABLE     "res\\ServerCert.PEM"
+IDR_SERVER_KEY          CERT    DISCARDABLE     "res\\ServerKey.PEM"
+IDR_CLIENT_KEY          CERT    DISCARDABLE     "res\\ClientPriKey.pem"
+IDR_CLIENT_CERT         CERT    DISCARDABLE     "res\\ClientCert.pem"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ON           BITMAP  DISCARDABLE     "res\\LEDON.bmp"
+IDB_BITMAP_OFF          BITMAP  DISCARDABLE     "res\\LEDOFF.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML                HTML    DISCARDABLE     "res\\index.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MiniCA(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\UsbKey.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
